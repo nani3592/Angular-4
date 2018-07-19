@@ -1,0 +1,42 @@
+.image{
+    min-width: 159px;
+    max-height: 194px;
+}
+
+ .main{
+        background: #f1f1f1; 
+        margin-top: 23px;
+        box-shadow: 2px 2px 2px 2px #eee;
+        border: 1px solid darkgrey;
+        padding: 11px;
+    }
+    .wrapper {
+        /* background: #f1f1f1; */
+         flex-flow: row wrap;
+         /* border: 2px solid lightgrey; */
+         margin-top: 36px;
+         padding:20px
+       }
+
+       .inputs{
+           padding:10px;
+       }
+
+       .data{
+        font-size: 20px;
+        font-family: 'Open Sans';
+        font-weight: normal;
+     
+    }
+
+    .details{
+        background: #ccccff;
+        border: 1px solid gray;
+        padding:20px;
+    }
+
+   .dashboard {
+        box-shadow: 2px 2px 2px 2px grey;
+        background: #fff;
+        padding:10px;
+    }

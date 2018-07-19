@@ -1,0 +1,63 @@
+<div fxLayout="column">
+
+    <div fxFlex="15" fxLayout="row" class="header">
+        <div fxFlex>
+            <h1>Header</h1>
+        </div>
+
+
+        <div fxShow.sm="false" fxShow.xs="true" fxShow="false" (click)="toggle()" fxFlex="2" fxLayoutAlign="end">
+            <i class="fas fa-ellipsis-v headerIcons"></i>
+        </div>
+
+
+
+        <div fxShow.sm="true" fxShow.xs="false" fxShow="true" fxFlex="5" fxLayoutAlign="end">
+            <i class="fas fa-bell headerIcons"></i>
+        </div>
+        <div fxShow.sm="true" fxShow.xs="false" fxShow="true" fxFlex="5" fxLayoutAlign="end">
+            <i class="fas fa-cog headerIcons"></i>
+        </div>
+
+        <div fxShow.sm="true" fxShow.xs="false" fxShow="true" fxFlex="5" fxLayoutAlign="end">
+            <i class="fas fa-trash headerIcons"></i>
+        </div>
+
+        <div fxShow.sm="true" fxShow.xs="false" fxShow="true" fxFlex="5" fxLayoutAlign="end">
+            <i class="fas fa-sign-out-alt headerIcons"></i>
+        </div>
+
+    </div>
+
+
+    <div fxFlex="grow" style="margin-top: -11px;" fxLayout="row">
+        <div fxShow.sm="false" fxShow.xs="false" fxFlex="20" class="sidenav">
+            <ul>
+                <li routerLink="/home/users">Users</li>
+                <li routerLink="/home/profile">Profile</li>
+            </ul>
+        </div>
+        <div fxFlex="grow">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+    <div fxShow.sm="false" fxLayoutGap="20px" fxShow.xs="true" fxShow="false" fxFlex="15" fxLayout="row" class="header">
+        <div fxFlex="10" fxLayoutAlign="end">
+            <i class="fas fa-bell headerIcons"></i>
+        </div>
+        <div fxFlex="10" fxLayoutAlign="end">
+            <i class="fas fa-cog headerIcons"></i>
+        </div>
+
+        <div fxFlex="10" fxLayoutAlign="end">
+            <i class="fas fa-trash headerIcons"></i>
+        </div>
+
+        <div fxFlex="10" fxLayoutAlign="end">
+            <i class="fas fa-sign-out-alt headerIcons"></i>
+        </div>
+    </div>
+</div>
+
+<sidenav fxShow.sm="true" fxShow.xs="true" fxShow="false" *ngIf="hide" style="position: absolute; left: 2px; top: 103px; z-index: 1;"></sidenav>

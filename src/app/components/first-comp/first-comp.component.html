@@ -1,0 +1,54 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Book_Name</th>
+        <th>Authur</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{book.book_name}}</td>
+        <td> {{book.authur}} </td>
+        <td> {{book.price}} </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="float: right;" class="form-group col-md-2">
+    <label style="background: blue; color: white" for="usr">Total Price</label>
+    <input type="text"  [value]="totalPrice" class="form-control" id="usr" readonly>
+  </div>
+
+
+  <div class="form-group">
+    <label style="background: blue; color: white" for="sel1">Select book:</label>
+    <select class="form-control col-md-3" [(ngModel)]='booktitle' (ngModelChange)="getPrice(booktitle)" id="sel1">
+      <option *ngFor="let book of books">{{book.book_name}}</option>
+    </select>
+  </div>
+<div *ngIf="boodData">
+  <div class="form-group col-md-2">
+    <label for="usr">Price Of Book</label>
+    <input type="text"  [value]="boodData.price" class="form-control" id="usr" readonly>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="usr">Auther Of Book</label>
+    <input type="text" [value]="boodData.authur" class="form-control" id="usr" readonly>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="usr">Id Of Book</label>
+    <input type="text"  [value]="boodData.book_id" class="form-control" id="usr" readonly>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="usr">Quantity</label>
+    <input type="text"  [value]="boodData.quantity" class="form-control" id="usr" readonly>
+  </div>
+</div>
+
+
+</div>

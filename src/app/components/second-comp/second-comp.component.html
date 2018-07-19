@@ -1,0 +1,27 @@
+<!-- <div fxLayout="row">
+  <div style="background: violet">one</div>
+  <div style="background: teal">two</div>
+</div> -->
+
+<div fxLayoutAlign="end">
+    <i (click)="close()" class="fas fa-times icon icon"></i>
+  </div>
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  
+  <div fxFlex="20">
+    <span class="data">Are you sure ?</span>
+  </div>
+  <div fxFlex="grow" fxLayoutAlign="space-between center" style="padding:17px" fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="50">
+      <button type="button" (click)="clearRecord(false)" style="padding:2px 21px 2px 21px" class="btn btn-primary">No
+        <i class="far fa-smile-beam icon"></i>
+      </button>
+    </div>
+    <div fxFlex="50">
+      <button type="button" (click)="clearRecord(true)" style="padding:2px 21px 2px 21px" class="btn btn-secondary">Yes
+        <i class="far fa-sad-tear icon"></i>
+      </button>
+    </div>
+  </div>
+
+</div>

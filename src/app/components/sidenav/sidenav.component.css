@@ -1,0 +1,9 @@
+.mail{
+    background: #f1f1f1;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width: 200px;
+    padding: 20px;
+    margin:10px;
+    border: 1px solid #eee;
+    display: inline-block;
+}

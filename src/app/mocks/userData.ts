@@ -1,0 +1,25 @@
+
+
+export const USERS = [
+    { 'name': 'Nani', 'age': '24', 'dept': 'AppDev', 'Ip_no': '14785' },
+    { 'name': 'Prabhakar', 'age': '23', 'dept': 'Database', 'Ip_no': '85693' },
+    { 'name': 'Shanmukh', 'age': '25', 'dept': 'AppDev', 'Ip_no': '35693' },
+    { 'name': 'Krishna', 'age': '24', 'dept': 'Research', 'Ip_no': '25896' },
+    { 'name': 'Venkatesh', 'age': '29', 'dept': 'B2B', 'Ip_no': '74125' },
+    { 'name': 'Naresh', 'age': '28', 'dept': 'DB', 'Ip_no': '54381' },
+    { 'name': 'Gopi', 'age': '27', 'dept': 'Node', 'Ip_no': '7586' },
+    { 'name': 'Laxman', 'age': '29', 'dept': 'UI', 'Ip_no': '54155' },
+    { 'name': 'Sumanth', 'age': '26', 'dept': 'UI', 'Ip_no': '44785' },
+    { 'name': 'Vinay', 'age': '29', 'dept': 'Node', 'Ip_no': '55745' },
+    { 'name': 'Mani Varma', 'age': '25', 'dept': 'UI', 'Ip_no': '45216' },
+    { 'name': 'Mani Teja', 'age': '28', 'dept': 'UI', 'Ip_no': '74155' },
+    { 'name': 'Vinod', 'age': '24', 'dept': 'Node', 'Ip_no': '55236' },
+    { 'name': 'Ravi', 'age': '26', 'dept': 'Java', 'Ip_no': '11478' },
+    { 'name': 'Pawan', 'age': '25', 'dept': 'DB', 'Ip_no': '77458' },
+    { 'name': 'Suresh', 'age': '28', 'dept': 'QA', 'Ip_no': '22547' },
+    { 'name': 'Sai', 'age': '28', 'dept': 'QA', 'Ip_no': '77845' },
+    { 'name': 'Madhu', 'age': '23', 'dept': 'Node', 'Ip_no': '44785' },
+    { 'name': 'Naveen', 'age': '24', 'dept': 'B2B', 'Ip_no': '44158' },
+    { 'name': 'Sunil', 'age': '26', 'dept': 'B2B', 'Ip_no': '88965' },
+    { 'name': 'Anil', 'age': '23', 'dept': 'QA', 'Ip_no': '99586' },
+]

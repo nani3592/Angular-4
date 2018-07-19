@@ -1,0 +1,19 @@
+<div [style.height.px]="divheight" class="mail">
+  <div fxLayoutAlign="end">
+    <i (click)="close()" class="fas fa-times icon"></i>
+  </div>
+
+  <div *ngIf="userData" fxLayout="column">
+    <span class="data">
+      Name: {{userData.name}} </span>
+    <span class="data">
+      Age: {{userData.age}}</span>
+    <span class="data">
+      Phone No: {{userData.Ip_no}}</span>
+    <span class="data">
+      Dept: {{userData.dept}}</span>
+
+  </div>
+
+
+</div>

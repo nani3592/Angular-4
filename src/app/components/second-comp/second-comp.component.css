@@ -1,0 +1,15 @@
+.data{
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+  
+}
+
+i:hover { color: #F96302; font-size: 16px; }
+
+.icon{
+    
+    cursor: pointer;
+  font-size: 14px;
+  
+}

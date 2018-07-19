@@ -1,0 +1,12 @@
+
+        <div class="wrapper" fxFlex="grow" fxLayoutAlign="center" fxLayout="row" fxLayout.xs="column">
+            <!-- <input type="text" [(ngModel)]="filterData" (ngModelChange)="filter(filterData)" >   -->
+          
+          <div *ngFor="let data of userdata, let i = index" class="mail">
+                <span (click)="details(data)" class="data">{{data.name}}</span>
+                <i (click)="close(data)" class="fas fa-times icon"></i>
+            </div>
+        </div>
+    <!-- </div> -->
+
+<userdetails *ngIf="showDetails" style="position: absolute; right: 0px; top: 97px; z-index: 1;"></userdetails>
